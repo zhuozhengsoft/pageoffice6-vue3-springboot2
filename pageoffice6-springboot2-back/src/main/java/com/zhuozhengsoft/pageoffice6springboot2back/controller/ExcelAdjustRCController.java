@@ -24,7 +24,7 @@ public class ExcelAdjustRCController {
         poCtrl.setWriter(wb);//此行必须
 
         //打开Word文档
-        poCtrl.webOpen("/doc/excel/ExcelAdjustRC/test.xls", OpenModeType.xlsReadOnly, "张三");
+        poCtrl.webOpen("/doc/excel/ExcelAdjustRC/test.xlsx", OpenModeType.xlsReadOnly, "张三");
         return poCtrl.getHtmlCode();
     }
 

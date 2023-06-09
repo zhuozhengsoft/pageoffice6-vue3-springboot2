@@ -57,10 +57,10 @@ public class SetExcelCellText2 {
 
         poCtrl.setWriter(wb); //必须。
          /**
-         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
+         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
          */
-        poCtrl.webOpen("/doc/excel/SetExcelCellText2/test.xls", OpenModeType.xlsNormalEdit, "张三");
+        poCtrl.webOpen("/doc/excel/SetExcelCellText2/test.xlsx", OpenModeType.xlsNormalEdit, "张三");
         return  poCtrl.getHtmlCode();
     }
 

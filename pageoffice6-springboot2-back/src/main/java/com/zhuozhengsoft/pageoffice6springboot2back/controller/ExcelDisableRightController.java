@@ -23,7 +23,7 @@ public class ExcelDisableRightController {
         poCtrl.setWriter(workBoook);
 
         //打开Word文档
-        poCtrl.webOpen("/doc/excel/ExcelDisableRight/test.xls", OpenModeType.xlsNormalEdit, "张三");
+        poCtrl.webOpen("/doc/excel/ExcelDisableRight/test.xlsx", OpenModeType.xlsNormalEdit, "张三");
         return poCtrl.getHtmlCode();
     }
 

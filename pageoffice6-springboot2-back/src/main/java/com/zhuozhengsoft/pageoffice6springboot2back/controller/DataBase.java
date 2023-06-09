@@ -33,8 +33,8 @@ public class DataBase {
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
         poCtrl.setSaveFilePage("save?id=1");//设置保存方法的url
          /**
-         * 下面是二进制输出流的方式(此方式支持集群部署)方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
-         * 还可以支持url路径，例如：webOpen("doc/test.doc,...)。
+         * 下面是二进制输出流的方式(此方式支持集群部署)方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
+         * 还可以支持url路径，例如：webOpen("doc/test.docx,...)。
          */
         poCtrl.webOpen("Openstream?id=1", OpenModeType.docNormalEdit, "张三");
         return  poCtrl.getHtmlCode();
@@ -64,7 +64,7 @@ public class DataBase {
             response.reset();
             response.setContentType("application/msword"); // application/x-excel, application/ms-powerpoint, application/pdf
             response.setHeader("Content-Disposition",
-                    "attachment; filename=down.doc"); //fileN应该是编码后的(utf-8)
+                    "attachment; filename=down.docx"); //fileN应该是编码后的(utf-8)
             response.setContentLength(fileSize);
 
             OutputStream outputStream = response.getOutputStream();

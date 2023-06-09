@@ -5,7 +5,7 @@
 		    关键代码：<span style="background-color: Yellow;"> <br/>DataRegion dataRegion
 		            = worddoc.openDataRegion("PO_开头的书签名称");
 		            <br/>
-		            dataRegion.setValue("[word]doc/1.doc[/word]");</span><br/>
+		            dataRegion.setValue("[word]doc/1.docx[/word]");</span><br/>
 		</div>
 	  <div style="height: 800px; width: auto" v-html="poHtmlCode" />
 	</div>

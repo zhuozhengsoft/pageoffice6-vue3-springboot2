@@ -21,7 +21,7 @@ public class WordCompare {
     @RequestMapping(value = "/Word")
     public String showWord(HttpServletRequest request) {
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
-        poCtrl.wordCompare("/doc/word/WordCompare/aaa1.doc", "/doc/word/WordCompare/aaa2.doc", OpenModeType.docAdmin, "张三");
+        poCtrl.wordCompare("/doc/word/WordCompare/aaa1.docx", "/doc/word/WordCompare/aaa2.docx", OpenModeType.docAdmin, "张三");
         return poCtrl.getHtmlCode();
     }
 

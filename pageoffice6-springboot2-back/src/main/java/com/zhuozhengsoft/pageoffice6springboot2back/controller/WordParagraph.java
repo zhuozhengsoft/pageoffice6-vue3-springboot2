@@ -90,7 +90,7 @@ public class WordParagraph {
         DataRegion body4 = doc.createDataRegion("PO_body4",
                 DataRegionInsertType.After, "PO_body3");
         body4.setValue("[image]/api/doc/WordParagraph/logo.png[/image]");
-        //body4.setValue("[word]doc/1.doc[/word]");//还可嵌入其他Word文件
+        //body4.setValue("[word]doc/1.docx[/word]");//还可嵌入其他Word文件
         ParagraphFormat bodyPara4 = body4.getParagraphFormat();
         bodyPara4.setAlignment(WdParagraphAlignment.wdAlignParagraphCenter);
 
@@ -99,10 +99,10 @@ public class WordParagraph {
         poCtrl.setJsFunction_AfterDocumentSaved("SaveOK()");
 
          /**
-         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
+         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
          */
-        poCtrl.webOpen("/doc/word/WordParagraph/test.doc", OpenModeType.docNormalEdit, "张三");
+        poCtrl.webOpen("/doc/word/WordParagraph/test.docx", OpenModeType.docNormalEdit, "张三");
         return poCtrl.getHtmlCode();
     }
 

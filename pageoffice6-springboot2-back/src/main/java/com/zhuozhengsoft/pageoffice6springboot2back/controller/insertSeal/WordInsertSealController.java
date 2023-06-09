@@ -26,23 +26,23 @@ public class WordInsertSealController {
         String filePath = "";
         String id = request.getParameter("id").trim();
         if ("1".equals(id)) {
-            filePath = "test1.doc";
+            filePath = "test1.docx";
         }
         if ("2".equals(id)) {
-            filePath = "test2.doc";
+            filePath = "test2.docx";
         }
         if ("3".equals(id)) {
-            filePath = "test3.doc";
+            filePath = "test3.docx";
         }
         if ("4".equals(id)) {
-            filePath = "test4.doc";
+            filePath = "test4.docx";
         }
 
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
         //设置保存页面
         poCtrl.setSaveFilePage("/word/InsertSeal/BatchAddSeal/save");//设置处理文件保存的请求方法
          /**
-         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
+         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
          */
         poCtrl.webOpen("/doc/word/InsertSeal/BatchAddSeal/" + filePath, OpenModeType.docNormalEdit, "张三");
@@ -56,16 +56,16 @@ public class WordInsertSealController {
         String filePath = "";
         String id = request.getParameter("id").trim();
         if ("1".equals(id)) {
-            filePath = "test1.doc";
+            filePath = "test1.docx";
         }
         if ("2".equals(id)) {
-            filePath = "test2.doc";
+            filePath = "test2.docx";
         }
         if ("3".equals(id)) {
-            filePath = "test3.doc";
+            filePath = "test3.docx";
         }
         if ("4".equals(id)) {
-            filePath = "test4.doc";
+            filePath = "test4.docx";
         }
 
         FileMakerCtrl fmCtrl = new FileMakerCtrl(request);
@@ -93,10 +93,10 @@ public class WordInsertSealController {
         //设置保存页面
         poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");//设置处理文件保存的请求方法
          /**
-         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
+         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
          */
-        poCtrl.webOpen("/doc/word/InsertSeal/AddSeal/test1.doc", OpenModeType.docNormalEdit, "张三");
+        poCtrl.webOpen("/doc/word/InsertSeal/AddSeal/test1.docx", OpenModeType.docNormalEdit, "张三");
         return poCtrl.getHtmlCode();
     }
 
@@ -108,10 +108,10 @@ public class WordInsertSealController {
         poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");//设置处理文件保存的请求方法
 
          /**
-         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
+         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
          */
-        poCtrl.webOpen("/doc/word/InsertSeal/AddSeal/test2.doc", OpenModeType.docNormalEdit, "张三");
+        poCtrl.webOpen("/doc/word/InsertSeal/AddSeal/test2.docx", OpenModeType.docNormalEdit, "张三");
         return poCtrl.getHtmlCode();
     }
 
@@ -122,10 +122,10 @@ public class WordInsertSealController {
         poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");//设置处理文件保存的请求方法
 
          /**
-         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
+         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
          */
-        poCtrl.webOpen("/doc/word/InsertSeal/AddSeal/test3.doc", OpenModeType.docNormalEdit, "张三");
+        poCtrl.webOpen("/doc/word/InsertSeal/AddSeal/test3.docx", OpenModeType.docNormalEdit, "张三");
         return poCtrl.getHtmlCode();
     }
 
@@ -136,10 +136,10 @@ public class WordInsertSealController {
         poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");//设置处理文件保存的请求方法
 
          /**
-         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
+         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
          */
-        poCtrl.webOpen("/doc/word/InsertSeal/AddSeal/test4.doc", OpenModeType.docNormalEdit, "张三");
+        poCtrl.webOpen("/doc/word/InsertSeal/AddSeal/test4.docx", OpenModeType.docNormalEdit, "张三");
         return poCtrl.getHtmlCode();
     }
 
@@ -151,10 +151,10 @@ public class WordInsertSealController {
         poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");//设置处理文件保存的请求方法
 
          /**
-         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
+         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
          */
-        poCtrl.webOpen("/doc/word/InsertSeal/AddSeal/test5.doc", OpenModeType.docNormalEdit, "张三");
+        poCtrl.webOpen("/doc/word/InsertSeal/AddSeal/test5.docx", OpenModeType.docNormalEdit, "张三");
         return poCtrl.getHtmlCode();
     }
 
@@ -166,10 +166,10 @@ public class WordInsertSealController {
         poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");//设置处理文件保存的请求方法
 
          /**
-         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
+         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
          */
-        poCtrl.webOpen("/doc/word/InsertSeal/AddSeal/test6.doc", OpenModeType.docNormalEdit, "张三");
+        poCtrl.webOpen("/doc/word/InsertSeal/AddSeal/test6.docx", OpenModeType.docNormalEdit, "张三");
         return poCtrl.getHtmlCode();
     }
 
@@ -180,10 +180,10 @@ public class WordInsertSealController {
         poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");//设置处理文件保存的请求方法
 
          /**
-         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
+         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
          */
-        poCtrl.webOpen("/doc/word/InsertSeal/AddSeal/test7.doc", OpenModeType.docNormalEdit, "张三");
+        poCtrl.webOpen("/doc/word/InsertSeal/AddSeal/test7.docx", OpenModeType.docNormalEdit, "张三");
         return poCtrl.getHtmlCode();
     }
 
@@ -194,10 +194,10 @@ public class WordInsertSealController {
         poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");//设置处理文件保存的请求方法
 
          /**
-         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
+         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
          */
-        poCtrl.webOpen("/doc/word/InsertSeal/AddSeal/test8.doc", OpenModeType.docNormalEdit, "张三");
+        poCtrl.webOpen("/doc/word/InsertSeal/AddSeal/test8.docx", OpenModeType.docNormalEdit, "张三");
         return poCtrl.getHtmlCode();
     }
 
@@ -208,10 +208,10 @@ public class WordInsertSealController {
         poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");//设置处理文件保存的请求方法
 
          /**
-         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
+         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
          */
-        poCtrl.webOpen("/doc/word/InsertSeal/AddSeal/test9.doc", OpenModeType.docNormalEdit, "张三");
+        poCtrl.webOpen("/doc/word/InsertSeal/AddSeal/test9.docx", OpenModeType.docNormalEdit, "张三");
         return poCtrl.getHtmlCode();
     }
 
@@ -222,10 +222,10 @@ public class WordInsertSealController {
         poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");//设置处理文件保存的请求方法
 
          /**
-         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
+         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
          */
-        poCtrl.webOpen("/doc/word/InsertSeal/AddSeal/test10.doc", OpenModeType.docNormalEdit, "张三");
+        poCtrl.webOpen("/doc/word/InsertSeal/AddSeal/test10.docx", OpenModeType.docNormalEdit, "张三");
         return poCtrl.getHtmlCode();
     }
 
@@ -236,10 +236,10 @@ public class WordInsertSealController {
         poCtrl.setSaveFilePage("/word/InsertSeal/AddSign/save");//设置处理文件保存的请求方法
 
          /**
-         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
+         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
          */
-        poCtrl.webOpen("/doc/word/InsertSeal/AddSign/test1.doc", OpenModeType.docNormalEdit, "张三");
+        poCtrl.webOpen("/doc/word/InsertSeal/AddSign/test1.docx", OpenModeType.docNormalEdit, "张三");
         return poCtrl.getHtmlCode();
     }
 
@@ -250,10 +250,10 @@ public class WordInsertSealController {
         poCtrl.setSaveFilePage("/word/InsertSeal/AddSign/save");//设置处理文件保存的请求方法
 
          /**
-         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
+         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
          */
-        poCtrl.webOpen("/doc/word/InsertSeal/AddSign/test2.doc", OpenModeType.docNormalEdit, "张三");
+        poCtrl.webOpen("/doc/word/InsertSeal/AddSign/test2.docx", OpenModeType.docNormalEdit, "张三");
         return poCtrl.getHtmlCode();
     }
 
@@ -264,10 +264,10 @@ public class WordInsertSealController {
         poCtrl.setSaveFilePage("/word/InsertSeal/AddSign/save");//设置处理文件保存的请求方法
 
          /**
-         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
+         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
          */
-        poCtrl.webOpen("/doc/word/InsertSeal/AddSign/test3.doc", OpenModeType.docNormalEdit, "张三");
+        poCtrl.webOpen("/doc/word/InsertSeal/AddSign/test3.docx", OpenModeType.docNormalEdit, "张三");
         return poCtrl.getHtmlCode();
     }
 
@@ -278,10 +278,10 @@ public class WordInsertSealController {
         poCtrl.setSaveFilePage("/word/InsertSeal/AddSign/save");//设置处理文件保存的请求方法
 
          /**
-         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
+         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
          */
-        poCtrl.webOpen("/doc/word/InsertSeal/AddSign/test4.doc", OpenModeType.docNormalEdit, "张三");
+        poCtrl.webOpen("/doc/word/InsertSeal/AddSign/test4.docx", OpenModeType.docNormalEdit, "张三");
         return poCtrl.getHtmlCode();
     }
 
@@ -293,10 +293,10 @@ public class WordInsertSealController {
         poCtrl.setSaveFilePage("/word/InsertSeal/AddSign/save");//设置处理文件保存的请求方法
 
          /**
-         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
+         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
          */
-        poCtrl.webOpen("/doc/word/InsertSeal/AddSign/test5.doc", OpenModeType.docNormalEdit, "张三");
+        poCtrl.webOpen("/doc/word/InsertSeal/AddSign/test5.docx", OpenModeType.docNormalEdit, "张三");
         return poCtrl.getHtmlCode();
     }
 

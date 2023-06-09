@@ -30,17 +30,17 @@ public class InsertPageBreak2 {
         mydr1.selectEnd();
         doc.insertPageBreak();//插入分页符
         DataRegion mydr2 = doc.createDataRegion("PO_second", DataRegionInsertType.After, "[end]");
-        mydr2.setValue("[word]/doc/word/InsertPageBreak2/test2.doc[/word]");
+        mydr2.setValue("[word]/doc/word/InsertPageBreak2/test2.docx[/word]");
 
         poCtrl.setWriter(doc);
         //设置保存页面
         poCtrl.setSaveFilePage("/word/InsertPageBreak2/save");//设置处理文件保存的请求方法
 
          /**
-         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
+         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
          */
-        poCtrl.webOpen("/doc/word/InsertPageBreak2/test1.doc", OpenModeType.docNormalEdit, "张三");
+        poCtrl.webOpen("/doc/word/InsertPageBreak2/test1.docx", OpenModeType.docNormalEdit, "张三");
         return poCtrl.getHtmlCode();
     }
 

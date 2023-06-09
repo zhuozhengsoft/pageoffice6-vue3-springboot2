@@ -37,10 +37,10 @@ public class SplitWord {
         //设置保存页面
         poCtrl.setSaveDataPage("/word/SplitWord/save");//设置处理文件保存的请求方法
          /**
-         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.doc  2.file://D:/doc/test.doc两种方式。
+         * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
          */
-        poCtrl.webOpen("/doc/word/SplitWord/test.doc", OpenModeType.docNormalEdit, "张三");
+        poCtrl.webOpen("/doc/word/SplitWord/test.docx", OpenModeType.docNormalEdit, "张三");
         return poCtrl.getHtmlCode();
     }
 
@@ -55,20 +55,20 @@ public class SplitWord {
 
         bWord = dr1.getFileBytes();
 
-        FileOutputStream fos1 = new FileOutputStream(filePath + "new1.doc");
+        FileOutputStream fos1 = new FileOutputStream(filePath + "new1.docx");
         fos1.write(bWord);
         fos1.flush();
         fos1.close();
         com.zhuozhengsoft.pageoffice.wordreader.DataRegion dr2 = doc.openDataRegion("PO_test2");
         bWord = dr2.getFileBytes();
-        FileOutputStream fos2 = new FileOutputStream(filePath + "new2.doc");
+        FileOutputStream fos2 = new FileOutputStream(filePath + "new2.docx");
         fos2.write(bWord);
         fos2.flush();
         fos2.close();
 
         com.zhuozhengsoft.pageoffice.wordreader.DataRegion dr3 = doc.openDataRegion("PO_test3");
         bWord = dr3.getFileBytes();
-        FileOutputStream fos3 = new FileOutputStream(filePath + "new3.doc");
+        FileOutputStream fos3 = new FileOutputStream(filePath + "new3.docx");
         fos3.write(bWord);
         fos3.flush();
         fos3.close();

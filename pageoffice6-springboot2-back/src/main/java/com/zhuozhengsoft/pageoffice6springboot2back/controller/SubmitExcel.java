@@ -36,7 +36,7 @@ public class SubmitExcel {
         //设置保存页面
         poCtrl.setSaveDataPage("saveData");//设置处理文件保存的请求方法
         //打开Word文档
-        poCtrl.webOpen("/doc/excel/SubmitExcel/test.xls", OpenModeType.xlsSubmitForm, "张三");
+        poCtrl.webOpen("/doc/excel/SubmitExcel/test.xlsx", OpenModeType.xlsSubmitForm, "张三");
         return poCtrl.getHtmlCode();
     }
 

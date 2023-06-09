@@ -34,8 +34,8 @@ public class SameTimeEdit {
         DataRegion d2 = doc.openDataRegion("PO_com2");
 
         //给数据区域赋值
-        d1.setValue("[word]/doc/word/SameTimeEdit/content1.doc[/word]");
-        d2.setValue("[word]/doc/word/SameTimeEdit/content2.doc[/word]");
+        d1.setValue("[word]/doc/word/SameTimeEdit/content1.docx[/word]");
+        d2.setValue("[word]/doc/word/SameTimeEdit/content2.docx[/word]");
 
 
         //根据登录用户名设置数据区域可编辑性
@@ -60,7 +60,7 @@ public class SameTimeEdit {
         //设置保存页
         poCtrl.setSaveDataPage("save?userName=" + userName);
         //打开Word文档
-        poCtrl.webOpen("/doc/word/SameTimeEdit/test.doc", OpenModeType.docSubmitForm, userName);
+        poCtrl.webOpen("/doc/word/SameTimeEdit/test.docx", OpenModeType.docSubmitForm, userName);
         return poCtrl.getHtmlCode();
     }
 
@@ -72,10 +72,10 @@ public class SameTimeEdit {
         String filePath = "";
         if (request.getParameter("userName") != null && request.getParameter("userName").trim().equalsIgnoreCase("zhangsan")) {
             bytes = doc.openDataRegion("PO_com1").getFileBytes();
-            filePath = "content1.doc";
+            filePath = "content1.docx";
         } else {
             bytes = doc.openDataRegion("PO_com2").getFileBytes();
-            filePath = "content2.doc";
+            filePath = "content2.docx";
         }
         doc.close();
 
