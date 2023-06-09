@@ -1,0 +1,9 @@
+server:
+  port: 8082
+
+  servlet:
+    context-path: /pageoffice6-springboot2-back
+
+posyspath: D:/pageoffice
+popassword: 111111
+
