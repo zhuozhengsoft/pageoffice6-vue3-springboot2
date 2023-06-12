@@ -95,8 +95,7 @@ public class WordParagraph {
         bodyPara4.setAlignment(WdParagraphAlignment.wdAlignParagraphCenter);
 
         poCtrl.setWriter(doc);
-        //设置页面保存后执行的JS函数
-        poCtrl.setJsFunction_AfterDocumentSaved("SaveOK()");
+
 
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。

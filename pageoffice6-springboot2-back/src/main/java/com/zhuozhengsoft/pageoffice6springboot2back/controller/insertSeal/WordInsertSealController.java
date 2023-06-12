@@ -39,8 +39,8 @@ public class WordInsertSealController {
         }
 
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
-        //设置保存页面
-        poCtrl.setSaveFilePage("/word/InsertSeal/BatchAddSeal/save");//设置处理文件保存的请求方法
+        //设置保存文件的接口地址
+        poCtrl.setSaveFilePage("/word/InsertSeal/BatchAddSeal/save");
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
@@ -70,10 +70,10 @@ public class WordInsertSealController {
 
         FileMakerCtrl fmCtrl = new FileMakerCtrl(request);
         fmCtrl.setServerPage("/api/poserver.zz");
-        fmCtrl.setJsFunction_AfterDocumentOpened("AfterDocumentOpened()");
+        //fmCtrl.setJsFunction_AfterDocumentOpened("AfterDocumentOpened()");
         fmCtrl.setJsFunction_OnProgressComplete("OnProgressComplete()");
-        //设置保存页面
-        fmCtrl.setSaveFilePage("/word/InsertSeal/BatchAddSeal/save");//设置处理文件保存的请求方法
+        //设置保存文件的接口地址
+        fmCtrl.setSaveFilePage("/word/InsertSeal/BatchAddSeal/save");
         fmCtrl.fillDocument("/doc/word/InsertSeal/BatchAddSeal/" + filePath, DocumentOpenType.Word);
         return fmCtrl.getHtmlCode("FileMakerCtrl1");
     }
@@ -90,8 +90,8 @@ public class WordInsertSealController {
     @RequestMapping(value = "AddSeal/Word1")
     public String showWord(HttpServletRequest request) {
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
-        //设置保存页面
-        poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");//设置处理文件保存的请求方法
+        //设置保存文件的接口地址
+        poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。
@@ -104,8 +104,8 @@ public class WordInsertSealController {
     @RequestMapping(value = "AddSeal/Word2")
     public String showWord2(HttpServletRequest request) {
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
-        //设置保存页面
-        poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");//设置处理文件保存的请求方法
+        //设置保存文件的接口地址
+        poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");
 
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
@@ -118,8 +118,8 @@ public class WordInsertSealController {
     @RequestMapping(value = "AddSeal/Word3")
     public String showWord3(HttpServletRequest request) {
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
-        //设置保存页面
-        poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");//设置处理文件保存的请求方法
+        //设置保存文件的接口地址
+        poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");
 
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
@@ -132,8 +132,8 @@ public class WordInsertSealController {
     @RequestMapping(value = "AddSeal/Word4")
     public String showWord4(HttpServletRequest request) {
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
-        //设置保存页面
-        poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");//设置处理文件保存的请求方法
+        //设置保存文件的接口地址
+        poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");
 
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
@@ -147,8 +147,8 @@ public class WordInsertSealController {
     public String showWord5(HttpServletRequest request) {
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
 
-        //设置保存页面
-        poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");//设置处理文件保存的请求方法
+        //设置保存文件的接口地址
+        poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");
 
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
@@ -162,8 +162,8 @@ public class WordInsertSealController {
     public String showWord6(HttpServletRequest request) {
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
 
-        //设置保存页面
-        poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");//设置处理文件保存的请求方法
+        //设置保存文件的接口地址
+        poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");
 
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
@@ -176,8 +176,8 @@ public class WordInsertSealController {
     @RequestMapping(value = "AddSeal/Word7")
     public String showWord7(HttpServletRequest request) {
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
-        //设置保存页面
-        poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");//设置处理文件保存的请求方法
+        //设置保存文件的接口地址
+        poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");
 
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
@@ -190,8 +190,8 @@ public class WordInsertSealController {
     @RequestMapping(value = "AddSeal/Word8")
     public String showWord8(HttpServletRequest request) {
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
-        //设置保存页面
-        poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");//设置处理文件保存的请求方法
+        //设置保存文件的接口地址
+        poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");
 
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
@@ -204,8 +204,8 @@ public class WordInsertSealController {
     @RequestMapping(value = "AddSeal/Word9")
     public String showWord9(HttpServletRequest request) {
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
-        //设置保存页面
-        poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");//设置处理文件保存的请求方法
+        //设置保存文件的接口地址
+        poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");
 
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
@@ -218,8 +218,8 @@ public class WordInsertSealController {
     @RequestMapping(value = "AddSeal/Word10")
     public String showWord10(HttpServletRequest request) {
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
-        //设置保存页面
-        poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");//设置处理文件保存的请求方法
+        //设置保存文件的接口地址
+        poCtrl.setSaveFilePage("/word/InsertSeal/AddSeal/save");
 
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
@@ -232,8 +232,8 @@ public class WordInsertSealController {
     @RequestMapping(value = "AddSign/Word1")
     public String showWord11(HttpServletRequest request) {
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
-        //设置保存页面
-        poCtrl.setSaveFilePage("/word/InsertSeal/AddSign/save");//设置处理文件保存的请求方法
+        //设置保存文件的接口地址
+        poCtrl.setSaveFilePage("/word/InsertSeal/AddSign/save");
 
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
@@ -247,7 +247,7 @@ public class WordInsertSealController {
     @RequestMapping(value = "AddSign/Word2")
     public String showWord12(HttpServletRequest request) {
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
-        poCtrl.setSaveFilePage("/word/InsertSeal/AddSign/save");//设置处理文件保存的请求方法
+        poCtrl.setSaveFilePage("/word/InsertSeal/AddSign/save");
 
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
@@ -260,8 +260,8 @@ public class WordInsertSealController {
     @RequestMapping(value = "AddSign/Word3")
     public String showWord13(HttpServletRequest request, Map<String, Object> map) {
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
-        //设置保存页面
-        poCtrl.setSaveFilePage("/word/InsertSeal/AddSign/save");//设置处理文件保存的请求方法
+        //设置保存文件的接口地址
+        poCtrl.setSaveFilePage("/word/InsertSeal/AddSign/save");
 
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
@@ -274,8 +274,8 @@ public class WordInsertSealController {
     @RequestMapping(value = "AddSign/Word4")
     public String showWord14(HttpServletRequest request) {
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
-        //设置保存页面
-        poCtrl.setSaveFilePage("/word/InsertSeal/AddSign/save");//设置处理文件保存的请求方法
+        //设置保存文件的接口地址
+        poCtrl.setSaveFilePage("/word/InsertSeal/AddSign/save");
 
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
@@ -289,8 +289,8 @@ public class WordInsertSealController {
     public String showWord15(HttpServletRequest request) {
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
 
-        //设置保存页面
-        poCtrl.setSaveFilePage("/word/InsertSeal/AddSign/save");//设置处理文件保存的请求方法
+        //设置保存文件的接口地址
+        poCtrl.setSaveFilePage("/word/InsertSeal/AddSign/save");
 
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。

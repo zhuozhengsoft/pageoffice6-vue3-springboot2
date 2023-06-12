@@ -23,7 +23,7 @@ public class WordDeleteRow {
         Cell cell = table1.openCellRC(2, 1);
         //删除坐标为(2,1)的单元格所在行
         table1.removeRowAt(cell);
-        poCtrl.setCustomToolbar(false);
+
         poCtrl.setWriter(doc);
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。

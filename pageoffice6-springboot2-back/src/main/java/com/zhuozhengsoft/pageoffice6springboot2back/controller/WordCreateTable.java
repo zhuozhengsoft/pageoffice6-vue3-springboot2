@@ -15,7 +15,6 @@ public class WordCreateTable {
     @RequestMapping(value = "/Word")
     public String showWord(HttpServletRequest request) {
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
-        poCtrl.setCustomToolbar(false);//隐藏用户自定义工具栏
         WordDocument doc = new WordDocument();
         //在word中指定的"PO_table1"的数据区域内动态创建一个3行5列的表格
         Table table1 = doc.openDataRegion("PO_table1").createTable(3, 5, WdAutoFitBehavior.wdAutoFitWindow);

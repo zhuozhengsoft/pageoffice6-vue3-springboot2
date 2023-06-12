@@ -25,7 +25,8 @@ public class CreateBlankFile {
     public String word(HttpServletRequest request) {
 
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
-        poCtrl.setSaveFilePage("save");//设置保存方法的url
+        //设置保存文件的接口地址
+        poCtrl.setSaveFilePage("save");
         poCtrl.webCreateNew("张三", DocumentVersion.Word2007); // 创建docx格式文档
         return  poCtrl.getHtmlCode();
     }

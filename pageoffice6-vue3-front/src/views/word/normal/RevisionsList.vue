@@ -40,6 +40,7 @@
 			OnPageOfficeCtrlInit() {
 				// 您可以在这里添加自定义按钮，执行您自定义的js。比如添加保存、打印、另存、关闭等按钮
 				pageofficectrl.AddCustomToolButton("保存", "Save()",1); 
+				pageofficectrl.OfficeToolbars=false;//隐藏Office工具栏
 			},
 			//控件中的一些常用方法都在这里调用，比如保存，打印等等
 			Save() {
@@ -121,7 +122,7 @@
 			window.refreshList = this.refreshList;
 			window.dateFormat = this.dateFormat;
 			window.goToRevision = this.goToRevision;
-			window.AfterDocumentOpened=this.AfterDocumentOpened;
+
 	    }
 	}
 </script>

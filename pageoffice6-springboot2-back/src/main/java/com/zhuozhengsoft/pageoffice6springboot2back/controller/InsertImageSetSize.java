@@ -23,10 +23,6 @@ public class InsertImageSetSize {
         // [image]标签中的width和height属性的单位是：英磅
         data1.setValue("[image width=200.2 height=200]/doc/word/InsertImageSetSize/1.jpg[/image]");
         poCtrl.setWriter(worddoc);
-        poCtrl.setCaption("演示：后台编程插入图片到数据区域并设置图片大小(企业版)");
-
-        //隐藏自定义工具栏
-        poCtrl.setCustomToolbar(false);
 
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。

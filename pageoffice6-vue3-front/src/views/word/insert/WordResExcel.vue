@@ -31,11 +31,17 @@
 	      })
 	    },
 	    methods:{
-	      //控件中的一些常用方法都在这里调用，比如保存，打印等等
+	      OnPageOfficeCtrlInit() {
+            pageofficectrl.CustomToolbar=false;//隐藏自定义工具栏    
+            //修改PageOffice控件标题栏文本内容      
+            pageofficectrl.Caption="演示：后台编程插入excel文件到数据区域(企业版)";
+       }
 	      
 	    },
 	    mounted: function(){
-	      // 将vue中的方法赋值给window
+	       // 将vue中的方法赋值给window
+           // 以下的为PageOffice事件的回调函数，名称不能改，否则PageOffice控件调用不到
+          window.OnPageOfficeCtrlInit = this.OnPageOfficeCtrlInit;
 	      
 	    }
 	}

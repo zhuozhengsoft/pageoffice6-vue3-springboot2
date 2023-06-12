@@ -23,13 +23,19 @@ export default {
         console.log(err);
       });
   },
-  methods: {
-    //控件中的一些常用方法都在这里调用，比如保存，打印等等
-  },
-  mounted: function () {
-    // 将vue中的方法赋值给window
-  },
-};
+   methods:{
+	      OnPageOfficeCtrlInit() {
+             pageofficectrl.CustomToolbar=false;//隐藏自定义工具栏    
+       }
+	      
+	    },
+	    mounted: function(){
+	       // 将vue中的方法赋值给window
+        // 以下的为PageOffice事件的回调函数，名称不能改，否则PageOffice控件调用不到
+         window.OnPageOfficeCtrlInit = this.OnPageOfficeCtrlInit;
+	      
+	    }
+}
 </script>
 <style scoped>
 #podiv {

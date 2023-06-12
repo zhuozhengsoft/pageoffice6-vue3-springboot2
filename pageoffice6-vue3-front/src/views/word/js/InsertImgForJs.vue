@@ -43,17 +43,13 @@
 			  //获取书签名称
 			  var bkName = "PO_logo";
 			  //将光标定位到书签所在的位置
-			  var mac = "Function myfunc()" + " \r\n"
-				  + "  ActiveDocument.Bookmarks(\"" + bkName + "\").Select " + " \r\n"
-				  + "End Function " + " \r\n";
-			  pageofficectrl.RunMacro("myfunc", mac);
-			//pageofficectrl.DataRegionList.GetDataRegionByName(Name).Locate();
+			  //根据书签名称选中书签
+			   pageofficectrl.word.SelectBookmark(bkName);			
 		  }
 	    },
 	    mounted: function(){
 	      // 将vue中的方法赋值给window
 			window.AfterDocumentOpened = this.AfterDocumentOpened;
-			window.locateBookMark = this.locateBookMark;
 	    }
 	}
 </script>

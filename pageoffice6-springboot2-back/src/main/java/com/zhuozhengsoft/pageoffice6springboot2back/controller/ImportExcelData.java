@@ -27,8 +27,8 @@ public class ImportExcelData {
         //定义Sheet对象，"Sheet1"是打开的Excel表单的名称
         Sheet sheet = workBook.openSheet("Sheet1");
         poCtrl.setWriter(workBook);//此行必须
-        //设置保存页面
-        poCtrl.setSaveDataPage("saveData");//设置处理文件保存的请求方法
+        //设置保存数据的接口地址
+        poCtrl.setSaveDataPage("saveData");
 
         return poCtrl.getHtmlCode();
     }

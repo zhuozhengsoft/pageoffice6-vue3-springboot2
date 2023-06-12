@@ -33,9 +33,8 @@ public class SubmitWord {
         dataRegion2.setEditing(true);
         dataRegion2.setValue("开发部");
         poCtrl.setWriter(wordDoc);
-        //添加自定义按钮
-        //设置保存页面
-        poCtrl.setSaveDataPage("/word/SubmitWord/save");//设置处理文件保存的请求方法
+        //设置保存数据的接口地址
+        poCtrl.setSaveDataPage("/word/SubmitWord/save");
 
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。

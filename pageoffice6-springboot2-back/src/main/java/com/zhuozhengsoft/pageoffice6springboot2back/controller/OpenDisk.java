@@ -30,7 +30,8 @@ public class OpenDisk {
     public String word(HttpServletRequest request) {
 
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
-        poCtrl.setSaveFilePage("save");//设置保存方法的url
+        //设置保存文件的接口地址
+        poCtrl.setSaveFilePage("save");
          /**
          * 下面是以磁盘路径方式打开文件的，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持url路径方式和openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。

@@ -33,8 +33,8 @@ public class InsertPageBreak2 {
         mydr2.setValue("[word]/doc/word/InsertPageBreak2/test2.docx[/word]");
 
         poCtrl.setWriter(doc);
-        //设置保存页面
-        poCtrl.setSaveFilePage("/word/InsertPageBreak2/save");//设置处理文件保存的请求方法
+        //设置保存文件的接口地址
+        poCtrl.setSaveFilePage("/word/InsertPageBreak2/save");
 
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。

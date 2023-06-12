@@ -29,10 +29,8 @@ public class ClickDataRegion {
         //dataReg.setEditing(true);
         poCtrl.setWriter(doc);
         poCtrl.setJsFunction_OnWordDataRegionClick("OnWordDataRegionClick()");
-        poCtrl.setOfficeToolbars(false);
-        poCtrl.setCaption("为方便用户知道哪些地方可以编辑，所以设置了数据区域的背景色");
-        //设置保存页面
-        poCtrl.setSaveFilePage("/word/ClickDataRegion/save");//设置处理文件保存的请求方法
+        // 设置保存文件的接口地址
+        poCtrl.setSaveFilePage("/word/ClickDataRegion/save");
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持openstream二进制输出流的方式(此方式支持集群部署)，例如：webOpen("/openstream?id=xx",...)。

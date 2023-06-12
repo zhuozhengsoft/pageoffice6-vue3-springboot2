@@ -4,6 +4,6 @@ server:
   servlet:
     context-path: /pageoffice6-springboot2-back
 
-posyspath: D:/pageoffice
+posyspath: D:/lic
 popassword: 111111
 

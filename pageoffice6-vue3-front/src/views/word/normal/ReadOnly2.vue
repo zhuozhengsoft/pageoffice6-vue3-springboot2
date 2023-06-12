@@ -23,17 +23,19 @@
         });
     },
     methods:{
-      //控件中的一些常用方法都在这里调用，比如保存，打印等等
-      AfterDocumentOpened() {
-        // pageofficectrl.SetEnableFileCommand(4, false); //禁止另存
-        // pageofficectrl.SetEnableFileCommand(5, false); //禁止打印
-        // pageofficectrl.SetEnableFileCommand(6, false); //禁止页面设置
-        // pageofficectrl.SetEnableFileCommand(8, false); //禁止打印预览
-      }
+       // PageOffice的初始化事件回调函数，您可以在这里添加自定义按钮
+      OnPageOfficeCtrlInit() {
+        pageofficectrl.CustomToolbar=false;//隐藏自定义工具栏    
+        pageofficectrl.OfficeToolbars=false;//隐藏Office工具栏
+        //修改PageOffice控件标题栏文本内容      
+        pageofficectrl.Caption="演示：文件在线安全浏览";
+       }
+     
     },
     mounted: function(){
       // 将vue中的方法赋值给window
-	  window.AfterDocumentOpened = this.AfterDocumentOpened;
+      // 以下的为PageOffice事件的回调函数，名称不能改，否则PageOffice控件调用不到
+    window.OnPageOfficeCtrlInit = this.OnPageOfficeCtrlInit;
     }
 }
 </script>

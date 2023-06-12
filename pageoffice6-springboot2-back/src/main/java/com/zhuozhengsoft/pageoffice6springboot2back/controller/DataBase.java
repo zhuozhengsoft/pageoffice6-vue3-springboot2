@@ -31,7 +31,8 @@ public class DataBase {
     public String word(HttpServletRequest request) {
 
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
-        poCtrl.setSaveFilePage("save?id=1");//设置保存方法的url
+        // 设置保存文件的接口地址
+        poCtrl.setSaveFilePage("save?id=1");
          /**
          * 下面是二进制输出流的方式(此方式支持集群部署)方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
          * 还可以支持url路径，例如：webOpen("doc/test.docx,...)。

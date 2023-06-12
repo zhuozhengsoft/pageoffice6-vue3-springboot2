@@ -23,10 +23,19 @@
         });
     },
     methods:{
-      //控件中的一些常用方法都在这里调用，比如保存，打印等等
+       // PageOffice的初始化事件回调函数，您可以在这里添加自定义按钮
+      OnPageOfficeCtrlInit() {
+        pageofficectrl.CustomToolbar=false;//隐藏自定义工具栏    
+        pageofficectrl.OfficeToolbars=false;//隐藏Office工具栏
+        //修改PageOffice控件标题栏文本内容      
+        pageofficectrl.Caption="演示：最简单的以只读模式打开Word文档";
+       }
+     
     },
     mounted: function(){
       // 将vue中的方法赋值给window
+      // 以下的为PageOffice事件的回调函数，名称不能改，否则PageOffice控件调用不到
+    window.OnPageOfficeCtrlInit = this.OnPageOfficeCtrlInit;
     }
 }
 </script>

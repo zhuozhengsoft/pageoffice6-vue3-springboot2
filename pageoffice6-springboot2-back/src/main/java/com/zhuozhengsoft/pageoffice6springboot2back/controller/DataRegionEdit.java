@@ -33,6 +33,7 @@ public class DataRegionEdit {
         poCtrl.setTheme(ThemeType.Office2007);
         poCtrl.setBorderStyle(BorderStyleType.BorderThin);
         poCtrl.setWriter(doc);
+        //设置保存文件的接口地址
         poCtrl.setSaveFilePage("/word/DataRegionEdit/save");
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。

@@ -55,9 +55,7 @@ public class SameTimeEdit {
 
         PageOfficeCtrl poCtrl = new PageOfficeCtrl(request);
         poCtrl.setWriter(doc);
-
-
-        //设置保存页
+        //设置保存数据的接口地址
         poCtrl.setSaveDataPage("save?userName=" + userName);
         //打开Word文档
         poCtrl.webOpen("/doc/word/SameTimeEdit/test.docx", OpenModeType.docSubmitForm, userName);

@@ -26,8 +26,8 @@ public class ExtractImage {
         DataRegion dataRegion1 = wordDoc.openDataRegion("PO_image");
         dataRegion1.setEditing(true);//放图片的数据区域是可以编辑的，其它部分不可编辑
         poCtrl.setWriter(wordDoc);
-        //设置保存页面
-        poCtrl.setSaveDataPage("save");//设置处理文件保存的请求方法
+        //设置保存数据的接口地址
+        poCtrl.setSaveDataPage("save");
 
          /**
          * 下面是以url方式打开文件的，还可以支持磁盘路径方式，例如：D:\\doc\\test.docx  2.file://D:/doc/test.docx两种方式。
